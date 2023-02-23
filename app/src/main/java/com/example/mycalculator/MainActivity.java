@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             return finaRerult;
         }catch (Exception e) {
-            return "Error";
+            return "Erro";
         }
     }
 
