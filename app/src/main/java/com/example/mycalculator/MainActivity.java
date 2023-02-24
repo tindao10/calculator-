@@ -90,12 +90,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         button_historyTV.setOnClickListener(new View.OnClickListener() {
 
-                                                @Override
-                                                public void onClick(View v) {
-                                                    startActivity(intent);
-                                                }
-                                            }
-
+            @Override
+            public void onClick(View v) {
+                startActivity(intent);
+            }
+        }
         );
 
 
