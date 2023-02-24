@@ -5,33 +5,57 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-   <TextView
-       android:id="@+id/solution_tv"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:layout_above="@id/result_tv"
-       android:layout_marginStart="16dp"
-       android:layout_marginTop="16dp"
-       android:layout_marginEnd="16dp"
-       android:layout_marginBottom="16dp"
-       android:textAlignment="textEnd"
-       android:textColor="@color/black"
-       android:textSize="32dp" />
-
-   <TextView
-       android:id="@+id/result_tv"
+   <LinearLayout
+       android:id="@+id/buttons_tab"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:layout_above="@id/buttons_laytout"
-       android:layout_marginStart="16dp"
-       android:layout_marginTop="16dp"
-       android:layout_marginEnd="16dp"
+       android:layout_alignParentBottom="false"
        android:layout_marginBottom="16dp"
-       android:text="0"
-       android:textAlignment="textEnd"
-       android:textColor="@color/black"
-       android:textSize="64dp" />
+       android:background="#F1F1F1"
+       android:orientation="vertical">
+
+      <com.google.android.material.button.MaterialButton
+          android:id="@+id/button_history"
+          android:layout_width="wrap_content"
+          android:layout_height="35dp"
+          android:layout_columnWeight="1"
+          android:background="@color/white"
+          android:shadowColor="#FFFFFF"
+          android:text="See History"
+          android:textColor="@color/black"
+          android:textSize="11sp"
+          android:textStyle="bold"
+          app:backgroundTint="#FFFFFF"/>
+
+      <TextView
+          android:id="@+id/solution_tv"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_above="@id/result_tv"
+          android:layout_marginStart="16dp"
+          android:layout_marginTop="16dp"
+          android:layout_marginEnd="16dp"
+          android:layout_marginBottom="16dp"
+          android:textAlignment="textEnd"
+          android:textColor="@color/black"
+          android:textSize="32dp" />
+
+      <TextView
+          android:id="@+id/result_tv"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_above="@id/buttons_laytout"
+          android:layout_marginStart="16dp"
+          android:layout_marginTop="16dp"
+          android:layout_marginEnd="16dp"
+          android:layout_marginBottom="16dp"
+          android:text="0"
+          android:textAlignment="textEnd"
+          android:textColor="@color/black"
+          android:textSize="64dp" />
+
+   </LinearLayout>
+
 
    <LinearLayout
        android:layout_width="match_parent"
@@ -41,7 +65,6 @@
        android:background="#AEB4B5"
        android:paddingVertical="16dp"
        android:id="@+id/buttons_laytout">
-
 
       <LinearLayout
           android:layout_width="match_parent"
@@ -58,7 +81,6 @@
              android:text="C"
              android:textColor="@color/black"
              android:textSize="32dp"
-
              app:backgroundTint="#FF9800"
              app:cornerRadius="36dp" />
 
@@ -116,7 +138,6 @@
              android:textSize="32dp"
              app:backgroundTint="#FFFFFF"
              app:cornerRadius="36dp" />
-
          <com.google.android.material.button.MaterialButton
              android:id="@+id/buttion_8"
              style="@style/Widget.Design.FloatingActionButton"
@@ -207,7 +228,6 @@
              android:textSize="32dp"
              app:backgroundTint="#818180"
              app:cornerRadius="36dp" />
-
       </LinearLayout>
       <LinearLayout
           android:layout_width="match_parent"
@@ -262,7 +282,6 @@
              android:textSize="32dp"
              app:backgroundTint="#818180"
              app:cornerRadius="36dp" />
-
       </LinearLayout>
       <LinearLayout
           android:layout_width="match_parent"
@@ -295,7 +314,7 @@
              app:cornerRadius="36dp" />
 
          <com.google.android.material.button.MaterialButton
-             android:id="@+id/buttion_equal"
+             android:id="@+id/buttion_equals"
              style="@style/Widget.Design.FloatingActionButton"
              android:layout_width="72dp"
              android:layout_height="72dp"
@@ -313,14 +332,15 @@
              android:layout_margin="12dp"
              android:text="AC"
              android:textColor="@color/black"
-             android:textSize="25dp"
+             android:textSize="20dp"
              app:backgroundTint="#FF9800"
-             app:cornerRadius="36dp" />
+             app:cornerRadius="36dp"/>
 
       </LinearLayout>
 
-
-
    </LinearLayout>
+
+
+
 
 </RelativeLayout>
