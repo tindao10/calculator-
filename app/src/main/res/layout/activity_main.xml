@@ -21,7 +21,7 @@
           android:layout_columnWeight="1"
           android:background="@color/white"
           android:shadowColor="#FFFFFF"
-          android:text="See History"
+          android:text="See history"
           android:textColor="@color/black"
           android:textSize="11sp"
           android:textStyle="bold"
